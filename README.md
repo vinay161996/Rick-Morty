@@ -1,8 +1,24 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Rick&Morty
 
-Currently, two official plugins are available:
+The Rick and Morty webapp is based on the popular television show “Rick and Morty.” With this, you’ll have access to a wealth of information related to the show.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Installation
+
+To run this project in your device, download the repository and open terminal in your editor and run command…
+
+```bash
+  npm i
+  npm run dev
+```
+    
+## Demo
+
+Livedemo: https://rudravinay-rick-morty.vercel.app/
+
+
+## Authors
+
+- [@rudravinay](https://github.com/vinay161996)
+
