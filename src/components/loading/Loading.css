@@ -1,0 +1,11 @@
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+.loading-img {
+  width: clamp(9rem, 30vw, 18rem);
+  height: clamp(9rem, 30vw, 18rem);
+}

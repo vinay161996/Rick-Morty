@@ -1,0 +1,123 @@
+.nav-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1rem 0;
+  width: 100%;
+  background-color: var(--clr-primary);
+  box-shadow: 0 0 0.5em var(--clr-secondary);
+  z-index: 999;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -10px;
+  overflow: hidden;
+  border: 0;
+  clip-path: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+}
+
+/* navbar */
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-primary-heading);
+  font-weight: var(--fw-semi-bold);
+}
+.nav-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav-list {
+  font-size: var(--fs-nav);
+  font-weight: var(--fw-semi-bold);
+
+  display: flex;
+  gap: clamp(1.5rem, 6vw, 4rem);
+}
+
+.nav-list a {
+  transition: all 300ms ease-in-out;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.active {
+  color: var(--clr-secondary);
+}
+
+@media only screen and (max-width: 50em) {
+  .navigation {
+    display: block;
+    position: fixed;
+    padding: 2.5rem;
+    inset: -50vh 0 auto;
+    background-image: linear-gradient(rgb(224, 255, 255), rgb(0, 139, 139));
+    border-radius: 0.3rem;
+    gap: 1rem;
+    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-list {
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .navigation.opened {
+    display: block;
+    inset: 10vh 0 auto;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0.5em;
+  }
+}
+
+/* navbar */
+/* .nav-list {
+  font-size: var(--fs-nav);
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  gap: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-list a {
+  color: var(--clr-text-primary);
+  padding: 0.3rem 0;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.nav-list a.active,
+.nav-list a:hover {
+  border-bottom: 2px solid black;
+
+  color: blue;
+} */

@@ -1,0 +1,12 @@
+.no-character {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+@media only screen and (max-width: 50em) {
+  .no-character {
+    min-height: 50vh;
+  }
+}

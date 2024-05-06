@@ -1,0 +1,35 @@
+.character-page span,
+.character-page h2 {
+  opacity: 0.7;
+}
+
+.character-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  margin-block: 3rem;
+}
+.character-img {
+  width: clamp(9rem, 30vw, 18rem);
+  height: clamp(9rem, 30vw, 18rem);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.3rem solid var(--clr-secondary);
+  object-fit: cover;
+  background-color: var(--clr-secondary);
+}
+.info-items {
+  margin: 1.2rem 0 2.5rem;
+}
+.info-item {
+  padding-block: 0.3em;
+  margin: 1em 1em;
+  border-bottom: 1px solid grey;
+}
+/* .character-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+} */
